@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'backenddb',
         'USER': 'postgres',
         'PASSWORD': 'mysuperuser',
-        'HOST': 'backenddb.cniskkwa20zl.us-east-1.rds.amazonaws.com',
+        'HOST': 'backend.croeg8yi87s6.us-west-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
