@@ -21,7 +21,7 @@ class Fixture(models.Model):
     result_home_team_score= models.IntegerField(null=True,blank=True)
     result_away_team_score= models.IntegerField(null=True,blank=True)
     league =models.CharField(choices=leagues,max_length=100)
-    odds = models.DecimalField(blank=True,null=True,max_digits=5)
+    odds = models.DecimalField(blank=True,null=True,max_digits=5,decimal_places=2)
     country = CountryField()
     season = models.CharField(max_length=100)
 
