@@ -16,7 +16,7 @@ class Fixture(models.Model):
     home_team = models.CharField(max_length=100)
     away_team = models.CharField(max_length=100)
     date = models.DateTimeField()
-    time= models.TimeField()
+    time= models.TimeField(default='00:00:00')
     created_at= models.DateTimeField(auto_now=True)
     prediction= models.CharField(max_length=100,null=True,blank=True)
     result_home_team_score= models.IntegerField(null=True,blank=True)
