@@ -17,7 +17,7 @@ class Fixture(models.Model):
     away_team = models.CharField(max_length=100)
     date = models.DateTimeField()
     created_at= models.DateTimeField(auto_now=True)
-    prediction= models.CharField(max_length=100,null=True,blank=True)
+    prediction= models.CharField(max_length=100,null=True,blank=True,max_length=5)
     result_home_team_score= models.IntegerField(null=True,blank=True)
     result_away_team_score= models.IntegerField(null=True,blank=True)
     league =models.CharField(choices=leagues,max_length=100)
