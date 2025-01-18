@@ -141,7 +141,7 @@ class Fixture(models.Model):
     odds = models.DecimalField(blank=True,null=True,max_digits=5,decimal_places=2)
     country = CountryField()
     season = models.CharField(max_length=100)
-    confidence= models.IntegerField(max=100)
+    confidence= models.IntegerField(max=100,default=50)
 
     def __str__(self):
         return f"{self.home_team} vs {self.away_team} on {self.date} in {self.league} season {self.season} in {self.country}"
