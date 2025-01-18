@@ -1,12 +1,12 @@
 from django.db import models
 from django_countries.fields import CountryField
 leagues = (
-    ("premier league", "premier league"),
-    ("championship", "championship"),
-    ("league 1", "league 1"),
-    ("epl league 1", "epl league 1"),
-    ("epl league 2", "epl league 2"),
-    ("laliga", "laliga"),
+    ("premier league", "Premier League"),
+    ("championship", "Championship"),
+    ("league 1", "League 1"),
+    ("epl league 1", "EPL League 1"),
+    ("epl league 2", "EPL League 2"),
+    ("laliga", "LaLiga"),
     ("Serie A", "Serie A"),
     ("Serie B", "Serie B"),
     ("Bundesliga", "Bundesliga"),
